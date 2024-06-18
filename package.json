@@ -1,8 +1,8 @@
 {
   "name": "better-next-image",
-  "version": "1.0.0",
-  "main": "index.ts",
-  "repository": "git@github.com:paullewisn/better-next-image.git",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "repository": "git@github.com:paullewisn/next-image-source.git",
   "author": "Paul-Lewis Nunn <paullewisn@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
