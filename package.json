@@ -51,7 +51,8 @@
     "test:watch": "jest --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "tsc"
+    "build": "rm -rf build && tsc",
+    "publish": "yarn build && npm publish --access public"
   },
   "packageManager": "yarn@4.2.2"
 }
