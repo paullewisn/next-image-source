@@ -1,11 +1,15 @@
 {
   "name": "next-image-source",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.4",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": "git@github.com:paullewisn/next-image-source.git",
   "author": "Paul-Lewis Nunn <paullewisn@users.noreply.github.com>",
   "license": "MIT",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
     "@eslint/eslintrc": "^3.1.0",

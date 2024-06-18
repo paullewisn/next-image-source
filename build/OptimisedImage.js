@@ -1,5 +1,5 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-export const Image = ({ priority, sources, loader, loaderOpts, fallbackSrc, alt, }) => {
+export const OptimisedImage = ({ priority, sources, loader, loaderOpts, fallbackSrc, alt, }) => {
     const extendedProps = {};
     if (priority) {
         extendedProps.fetchpriority = 'high';

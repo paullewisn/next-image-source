@@ -1,4 +1,4 @@
-import { Loader } from "./loaders.types";
+import { Loader } from "./loaders.type";
 
 export const imgixLoader: Loader = (src, opts) => {
     const srcset = [1, 2, 3].map((density) => {

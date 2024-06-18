@@ -1,2 +1,2 @@
-import { Loader } from "./loaders.types";
+import { Loader } from "./loaders.type";
 export declare const imgixLoader: Loader;
