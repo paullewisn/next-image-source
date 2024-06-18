@@ -1,5 +1,4 @@
-import { FC } from 'react';
-import { Loader, LoaderOpts } from '.';
+import { Loader, LoaderOpts } from './loaders/loaders.type';
 export type SourcesType = {
     src: string;
     mediaPrefix?: 'max' | 'min';
@@ -13,4 +12,3 @@ export type Props = {
     loaderOpts?: LoaderOpts;
     loader: Loader;
 };
-export declare const OptimisedImage: FC<Props>;

@@ -1,21 +1,5 @@
 import { FC } from 'react';
-
-import { Loader, LoaderOpts } from '.';
-
-export type SourcesType = {
-  src: string;
-  mediaPrefix?: 'max' | 'min';
-  width: number;
-}[];
-
-export type Props = {
-  alt: string;
-  sources: SourcesType;
-  fallbackSrc: string;
-  priority?: boolean;
-  loaderOpts?: LoaderOpts;
-  loader: Loader;
-};
+import { Props } from './OptimisedImage.types';
 
 export const OptimisedImage: FC<Props> = ({
   priority,

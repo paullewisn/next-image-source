@@ -1,3 +1,4 @@
-export type { Loader, LoaderOpts } from './loaders/loaders.type';
-export { OptimisedImage } from './OptimisedImage';
-export { imgixLoader } from './loaders/imgix';
+export type * from './src/OptimisedImage.types';
+export { OptimisedImage } from './src/OptimisedImage';
+export type * from './src/loaders/loaders.type';
+export { imgixLoader } from './src/loaders/imgix';

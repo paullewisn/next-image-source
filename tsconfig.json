@@ -4,7 +4,7 @@
     "lib": ["dom", "es6"],
     "jsx": "react-jsx",
     "module": "ES6",
-    "rootDir": "./src",
+    "rootDir": ".",
     "declaration": true,
     "outDir": "./build",
     "esModuleInterop": true,
@@ -13,5 +13,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["src/**/*"]
+  "include": ["./index.ts", "src/**/*"],
+  "exclude": ["src/**/*.types.ts"]
 }
