@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Props } from './image.types';
+import { Props } from './Image.types';
 
 export const Image: FC<Props> = ({
   priority,

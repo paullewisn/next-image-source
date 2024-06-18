@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Image } from './image';
+import { Image } from './Image';
 import { imgixLoader } from './loaders/imgix';
 
 const meta: Meta<typeof Image> = {
