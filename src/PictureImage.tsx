@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { OptimisedImageProps } from './OptimisedImage.types';
+import { PictureImageProps } from './PictureImage.types';
 
-export const OptimisedImage: FC<OptimisedImageProps> = ({
+export const PictureImage: FC<PictureImageProps> = ({
   priority,
   sources,
   loader,

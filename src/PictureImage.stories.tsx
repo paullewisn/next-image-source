@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { imgixLoader } from './loaders/imgix';
-import { OptimisedImage } from './OptimisedImage';
+import { PictureImage } from './PictureImage';
 
 const meta: Meta<typeof Image> = {
   args: {
@@ -24,7 +24,7 @@ const meta: Meta<typeof Image> = {
     loader: imgixLoader,
     loaderOpts: {},
   },
-  component: OptimisedImage,
+  component: PictureImage,
   title: 'atoms/Image',
   decorators: [
     (Story) => (

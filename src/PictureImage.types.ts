@@ -8,7 +8,7 @@ export type SourcesType = {
   width: number;
 }[];
 
-export type OptimisedImageProps = {
+export type PictureImageProps = {
   alt: string;
   sources: SourcesType;
   fallbackSrc: string;

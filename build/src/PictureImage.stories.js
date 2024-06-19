@@ -1,6 +1,6 @@
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
 import { imgixLoader } from './loaders/imgix';
-import { OptimisedImage } from './OptimisedImage';
+import { PictureImage } from './PictureImage';
 const meta = {
     args: {
         alt: 'alt',
@@ -23,7 +23,7 @@ const meta = {
         loader: imgixLoader,
         loaderOpts: {},
     },
-    component: OptimisedImage,
+    component: PictureImage,
     title: 'atoms/Image',
     decorators: [
         (Story) => (_jsxs(_Fragment, { children: [_jsx("div", { children: "before" }), _jsx("div", { style: {
