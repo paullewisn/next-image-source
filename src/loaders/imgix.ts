@@ -9,15 +9,17 @@ export const imgixLoader: Loader = (src, opts) => {
         auto = 'format',
         fm = 'webp',
         fit = 'fill',
-        h = 468,
+        w = 100,
+        h,
       } = opts ?? {};
   
       srcUrl.searchParams.append('auto', auto);
       srcUrl.searchParams.set('fm', fm);
       srcUrl.searchParams.set('fit', fit);
-      srcUrl.searchParams.set('h', `${h}`);
+      h && srcUrl.searchParams.set('h', `${h}`);
       srcUrl.searchParams.set('q', `${baseQuality * density}`);
       srcUrl.searchParams.set('dpr', `${density}`);
+      srcUrl.searchParams.set('w', `${w}`);
   
       return `${srcUrl.toString()} ${density}x`;
     });

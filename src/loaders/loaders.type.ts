@@ -6,4 +6,5 @@ export type LoaderOpts = {
   fm?: string;
   fit?: string;
   h?: number;
+  w: number;
 };
