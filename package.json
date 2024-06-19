@@ -1,9 +1,9 @@
 {
-  "name": "next-image-source",
-  "version": "0.0.7",
+  "name": "next-picture-image",
+  "version": "0.0.1",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "repository": "git@github.com:paullewisn/next-image-source.git",
+  "repository": "git@github.com:paullewisn/next-picture-image.git",
   "author": "Paul-Lewis Nunn <paullewisn@users.noreply.github.com>",
   "license": "MIT",
   "files": [
