@@ -1,9 +1,13 @@
-export type {
+import type {
   PictureImageProps,
   SourcesType,
 } from './src/PictureImage.types';
 
-export type { Loader, LoaderOpts } from './src/loaders/loaders.type';
+import type { Loader, LoaderOpts } from './src/loaders/loaders.type';
 
 declare function PictureImage(props: PictureImageProps): JSX.Element;
 declare function imgixLoader(src: string, opts: LoaderOpts): string;
+
+export { PictureImage, imgixLoader };
+export type { Loader, LoaderOpts, PictureImageProps, SourcesType };
+
