@@ -1,6 +1,6 @@
 {
   "name": "next-picture-image",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "repository": "git@github.com:paullewisn/next-picture-image.git",
@@ -52,7 +52,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "rm -rf build && tsc && cp index.d.ts ./build && cp index.js ./build",
-    "pub": "yarn build  && npm publish --access public"
+    "pub": "npm publish --access public"
   },
   "packageManager": "yarn@4.2.2"
 }
