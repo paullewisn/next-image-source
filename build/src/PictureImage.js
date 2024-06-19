@@ -1,5 +1,8 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-export const PictureImage = ({ priority, sources, loader, loaderOpts, fallbackSrc, alt, }) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PictureImage = void 0;
+const jsx_runtime_1 = require("react/jsx-runtime");
+const PictureImage = ({ priority, sources, loader, loaderOpts, fallbackSrc, alt, }) => {
     const extendedProps = {};
     if (priority) {
         extendedProps.fetchpriority = 'high';
@@ -7,5 +10,6 @@ export const PictureImage = ({ priority, sources, loader, loaderOpts, fallbackSr
     else {
         extendedProps.loading = 'lazy';
     }
-    return (_jsxs("picture", { children: [sources === null || sources === void 0 ? void 0 : sources.map(({ src, width, mediaPrefix }) => (_jsx("source", { srcSet: loader(src, loaderOpts), media: `(${mediaPrefix !== null && mediaPrefix !== void 0 ? mediaPrefix : 'min'}-width: ${width}px)` }, src))), _jsx("img", Object.assign({ decoding: "async", src: fallbackSrc, alt: alt }, extendedProps))] }));
+    return ((0, jsx_runtime_1.jsxs)("picture", { children: [sources === null || sources === void 0 ? void 0 : sources.map(({ src, media, loaderOpts: srcLoaderOpts }) => ((0, jsx_runtime_1.jsx)("source", { srcSet: loader(src, loaderOpts, srcLoaderOpts), media: media }, src))), (0, jsx_runtime_1.jsx)("img", Object.assign({ decoding: "async", src: fallbackSrc, alt: alt }, extendedProps))] }));
 };
+exports.PictureImage = PictureImage;

@@ -1,8 +1,8 @@
 import { Loader, LoaderOpts } from './loaders/loaders.type';
 export type SourcesType = {
     src: string;
-    mediaPrefix?: 'max' | 'min';
-    width: number;
+    media: string;
+    loaderOpts?: LoaderOpts;
 }[];
 export type PictureImageProps = {
     alt: string;

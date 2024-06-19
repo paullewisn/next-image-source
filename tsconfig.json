@@ -3,7 +3,7 @@
     "target": "ES6",
     "lib": ["dom", "es6"],
     "jsx": "react-jsx",
-    "module": "ES6",
+    "module": "commonjs",
     "rootDir": ".",
     "declaration": true,
     "outDir": "./build",
@@ -13,6 +13,5 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["./index.d.ts", "src/**/*"],
-  "exclude": ["src/**/*.types.ts"]
+  "include": ["index.ts", "src/**/*"]
 }

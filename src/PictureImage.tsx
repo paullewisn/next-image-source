@@ -19,11 +19,11 @@ export const PictureImage: FC<PictureImageProps> = ({
 
   return (
     <picture>
-      {sources?.map(({ src, width, mediaPrefix }) => (
+      {sources?.map(({ src, media, loaderOpts: srcLoaderOpts }) => (
         <source
           key={src}
-          srcSet={loader(src, loaderOpts)}
-          media={`(${mediaPrefix ?? 'min'}-width: ${width}px)`}
+          srcSet={loader(src, loaderOpts, srcLoaderOpts)}
+          media={media}
         />
       ))}
       <img decoding="async" src={fallbackSrc} alt={alt} {...extendedProps} />
