@@ -12,7 +12,7 @@ const imgixLoader = (src, opts, srcOpts) => {
         h && srcUrl.searchParams.set('h', `${h}`);
         ar && srcUrl.searchParams.set('ar', ar);
         ar && srcUrl.searchParams.set('fit', "crop");
-        srcUrl.searchParams.set('q', `${baseQuality * density}`);
+        srcUrl.searchParams.set('q', `${baseQuality / density}`);
         srcUrl.searchParams.set('dpr', `${density}`);
         srcUrl.searchParams.set('w', `${w}`);
         return `${srcUrl.toString()} ${density}x`;
