@@ -11,5 +11,5 @@ export type PictureImageProps = {
     priority?: boolean;
     loaderOpts?: LoaderOpts;
     loader: Loader;
-    blurhash: string;
+    blurhash?: string;
 };
