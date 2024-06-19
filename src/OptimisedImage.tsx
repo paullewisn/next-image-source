@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { Props } from './OptimisedImage.types';
+import { OptimisedImageProps } from './OptimisedImage.types';
 
-export const OptimisedImage: FC<Props> = ({
+export const OptimisedImage: FC<OptimisedImageProps> = ({
   priority,
   sources,
   loader,

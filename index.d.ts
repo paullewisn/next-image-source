@@ -1,4 +1,7 @@
-export type * from './src/OptimisedImage.types';
-export { OptimisedImage } from './src/OptimisedImage';
-export type * from './src/loaders/loaders.type';
-export { imgixLoader } from './src/loaders/imgix';
+declare namespace nextImageSource {
+    export type { OptimisedImageProps, SourcesType } from './src/OptimisedImage.types';
+}
+
+declare namespace nextImageSource.loaders {
+  export type { Loader, LoaderOpts } from './src/loaders/loaders.type';
+}
